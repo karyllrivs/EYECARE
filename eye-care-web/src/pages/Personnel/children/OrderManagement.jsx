@@ -5,14 +5,14 @@ import OrderModal from "../components/OrderModal";
 import { printPage } from "../../../utils/printPage";
 import PrintToPDFButton from "../components/PrintToPDFButton";
 import useTimeFrequencyFilter from "../components/TimeFrequencyFilter";
-
+import usePagination from "../components/Pagination";
 import useFilterSearch from "../components/FilterSearch";
 
 const OrderManagement = () => {
 
     const [checkouts, setCheckouts] = useState([]);
     const [TimeFrequencyFilter, timeFrequencyFilteredItems] = useTimeFrequencyFilter(checkouts);
-   
+    const [Pagination, currentItems] = usePagination(timeFrequencyFilteredItems);
     const [FilterSearch, filteredData] = useFilterSearch(checkouts, ["checkout_id"]);
 
 
@@ -92,7 +92,7 @@ const OrderManagement = () => {
                                     {filteredData.map(({ checkout_id, user, payment_status, total_amount, date_created, orders }, index) => (
                                         <tr key={index} className="bg-white  dark:border-gray-700">
                                             <td className="px-6 py-4">{checkout_id}</td>
-                                            <td className="px-6 py-4">{user.first_name} {user.last_name}</td>
+                                            <td className="px-6 py-4">{user?.first_name || "N/A"} {user?.last_name || "N/A"}</td> {/* b4: <td className="px-6 py-4">{user.first_name} {user.last_name}</td>  */} 
                                             <td className="px-6 py-4">₱{total_amount}</td>
                                             <td className="px-6 py-4">{formatDateToLong(date_created)}</td>
                                             <td className="px-6 py-4">
@@ -123,7 +123,8 @@ const OrderManagement = () => {
                     <div className="flex justify-between">
                         <PrintToPDFButton handlePrint={handlePrint} />
 
-                       
+                        {/* Pagination */}
+                        {Pagination}
                     </div>
 
                     {/* Order Modal */}
