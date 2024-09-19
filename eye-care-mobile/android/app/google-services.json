@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "744794584754",
+    "project_id": "eye-care-68b1a",
+    "storage_bucket": "eye-care-68b1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744794584754:android:1177f6a21b541219e2fbab",
+        "android_client_info": {
+          "package_name": "com.example.eyecare_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744794584754-q0m10psd9r2on549b5p4s90od0jdrjdm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eyecare_mobile",
+            "certificate_hash": "eccba982b33690df05faad732893ae95e6f2913f"
+          }
+        },
+        {
+          "client_id": "744794584754-j17n7sq3sdec7q25dmbo15u73gas1h05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP63eaezXfEjFI_UWRz1MTLh8LP_SMggg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744794584754-j17n7sq3sdec7q25dmbo15u73gas1h05.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "744794584754-ojufaamgq7e0hfv5qqg6mcj1b4g9mtrt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.eyecareMobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
