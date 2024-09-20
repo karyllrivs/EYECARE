@@ -26,7 +26,7 @@ const Footer = () => {
               <div className="flex items-center mb-3">
                 <FaMapMarkerAlt className="text-[#253D4E] mr-2" />
                 <span className="text-[#253D4E]">
-                  24 A. Mabini Street, Pasig, 1600 Metro Manila
+                  159 M. L. Quezon Ave, Street, Antipolo, 1870 Rizal
                 </span>
               </div>
               <div className="flex items-center mb-3">
